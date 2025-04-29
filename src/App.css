@@ -52,7 +52,6 @@
 body {
   font-family: Georgia, serif;
   margin: 0;
-  background-color: #b76060;
   height: 100vh;  /* Ensure the body stretches fully */
   display: flex;
   flex-direction: column;  /* Ensures the navbar and content are stacked */
