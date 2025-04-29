@@ -9,12 +9,14 @@ const ProjectDetails = () => {
   const [newComment, setNewComment] = useState('');
 
   useEffect(() => {
-    // Fetch project from your backend
-    fetch(`https://your-backend-url.com/projects/${id}`) 
+    const API_URL = import.meta.env.VITE_API_URL;
+  
+    fetch(`${API_URL}/projects/${id}`)
       .then(response => response.json())
       .then(data => setProject(data))
       .catch(error => console.error('Error fetching project:', error));
   }, [id]);
+  
 
   const handleCommentSubmit = (e) => {
     e.preventDefault();
