@@ -1,0 +1,46 @@
+.submit-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #664ad7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-form input,
+.submit-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.submit-form textarea {
+  resize: vertical;
+}
+
+.submit-form button {
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-form button:hover {
+  background-color: #45a049;
+}

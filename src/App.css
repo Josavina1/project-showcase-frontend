@@ -1,0 +1,73 @@
+/* Ensure root container takes the full height of the viewport */
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns content to the top */
+  text-align: center;
+}
+
+/* Styles for the logo with hover effect */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card style */
+.card {
+  padding: 2em;
+}
+
+/* Link style */
+.read-the-docs {
+  color: #888;
+}
+
+/* Body and page layout */
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  background-color: #b76060;
+  height: 100vh;  /* Ensure the body stretches fully */
+  display: flex;
+  flex-direction: column;  /* Ensures the navbar and content are stacked */
+}
+
+
+/* Default styles for links */
+a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+

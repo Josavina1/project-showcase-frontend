@@ -1,0 +1,25 @@
+.project-details-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .project-details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-details-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .video-container {
+    margin-top: 20px;
+  }
+  
+  iframe {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  

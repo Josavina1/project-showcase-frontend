@@ -1,0 +1,33 @@
+.login-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #7359e6;
+    border-radius: 8px;
+  }
+  
+  .login-form input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* avoids the navbar */
+    padding-top: 60px; /* space for the fixed navbar */
+  }
+  
