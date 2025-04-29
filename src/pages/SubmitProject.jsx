@@ -29,13 +29,15 @@ const SubmitProject = () => {
     for (let pair of formData.entries()) {
       console.log(pair[0] + ': ' + pair[1]);
     }
-  
+    
     try {
-      const response = await fetch('http://localhost:5000/api/projects', {
+      const API_URL = import.meta.env.VITE_API_URL;
+    
+      const response = await fetch(`${API_URL}/projects`, {
         method: 'POST',
         body: formData,
       });
-  
+    
       const data = await response.json();
       console.log('Project submitted successfully:', data);
       alert('Project submitted!');
@@ -43,9 +45,7 @@ const SubmitProject = () => {
       console.error('Error submitting project:', error);
       alert('Failed to submit project.');
     }
-  };
-  
-  
+    
 
   // Validate YouTube video link
   const isValidYouTubeLink = (videoLink) => {
